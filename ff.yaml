@@ -1,0 +1,51 @@
+build_settings:
+  flutter_sdk_path:
+  version:
+    name: 1.0.3
+    patch: 1
+    number: 0
+  environments:
+    - test
+    - production
+  platforms:
+    - android
+    - ios
+  output_path: ./output
+  android_build_tool_version: 33.0.2
+
+uni_link_scheme:
+  test: app
+  prod: app
+
+display_app_name:
+  test: app
+  prod: app
+
+app_id:
+  android:
+    test: app
+    prod: app
+  ios:
+    test: app
+    prod: app
+
+asset:
+  class:
+    path: lib/utils/constants/assets.dart
+    name: AppAssets
+  paths:
+    - assets/images/*
+    - assets/svgs/*
+    - assets/gifs/*
+
+locale:
+  path: lib/data/locales/locale.dart
+  languages:
+    - en_US
+    - zh_CN
+    - vi_VN
+    - km_KH
+
+change_logs:
+  1.0.0:
+    - Initial new version
